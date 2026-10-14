@@ -1,9 +1,8 @@
-// Definición de la clase Producto
 class Producto {
     constructor(nombre, precio, descuento, imagen) {
         this.nombre = nombre;
         this.precio = precio;
-        this.descuento = descuento; // Porcentaje de descuento (ej. 20 para 20%)
+        this.descuento = descuento;
         this.imagen = imagen;
     }
 
@@ -22,7 +21,7 @@ const catalogo = [prod1, prod2, prod3];
 const contenedor = document.getElementById("contenedor-productos");
 
 function renderizarCatalogo() {
-    contenedor.innerHTML = ""; // Limpiar contenedor
+    contenedor.innerHTML = "";
 
     catalogo.forEach((producto, index) => {
         const tarjeta = document.createElement("div");
