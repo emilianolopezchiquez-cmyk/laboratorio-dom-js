@@ -19,11 +19,6 @@ const prod3 = new Producto("Teclado Mecánico", 85, 20, "https://picsum.photos/s
 
 const catalogo = [prod1, prod2, prod3];
 
-// ❌ ERROR INTENCIONAL AQUÍ: 
-// Se puso 'contenedor-prod' en vez de 'contenedor-productos'. 
-// Tu compañero tendrá que identificar este error, crear el Issue y corregirlo a 'contenedor-productos'.
-const contenedor = document.getElementById("contenedor-prod");
-
 function renderizarCatalogo() {
     contenedor.innerHTML = ""; // Limpiar contenedor
 
